@@ -25,7 +25,10 @@ exports.config = {
 			endpoint: 'https://rickandmortyapi.com/api/character/',
 		},
 		GraphQL: {
-			endpoint: 'https://rickandmortyapi.com/graphql',
+			endpoint: 'https://graphql-pokeapi.vercel.app/api/graphql',
+		},
+		JSONResponse: {
+			requestHelper: 'GraphQL',
 		},
 		DbHelper: {
 			require: './node_modules/codeceptjs-dbhelper',
@@ -81,6 +84,6 @@ exports.config = {
 			enabled: true,
 		},
 	},
-	tests: './tests/*_test.ts',
+	tests: './tests/API_test.ts',
 	name: 'Framework',
 }
